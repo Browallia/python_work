@@ -101,7 +101,7 @@ def save_images(content):
             f.write(content)
             f.close()
 def main(offset):
-    html = get_page_index(offset,"路人女主的养成方法")
+    html = get_page_index(offset,"KEY_WORD")
     for url in parse_page_index(html):
         html1 = get_page_detail(url)
         if html1:
